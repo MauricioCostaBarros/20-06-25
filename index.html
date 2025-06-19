@@ -9,19 +9,23 @@
 <body>
     <div class="container">
         <h1>Daiane Soares</h1>
-        <p class="subtexto">Digite a senha para liberar o cupom</p>
+        <h3 class="subtexto"><em>Digite a senha para liberar o presente</em></h3>
         <input type="password" id="senha" placeholder="Digite a senha">
         <button onclick="verificarSenha()">Entrar</button>
         <p id="erro" class="erro"></p>
-        <div class="dicas">
-            <h3>DICAS</h3>
-            <ul>
-                <li>É uma data</li>
-                <li>Dia/Mês/Ano</li>
-                <li>Praça Stella Maris</li>
-                <li>Prova prática</li>
-                <li>Te amo</ul>
-        </div>
+        <button class="botao-dicas" onclick="toggleDicas()">Mostrar Dicas</button>
+
+<div class="dicas" id="boxDicas">
+    <h3>DICAS</h3>
+    <ul>
+        <li>É uma data</li>
+        <li>Dia/Mês/Ano</li>
+        <li>Praça Stella Maris</li>
+        <li>Prova prática</li>
+        <li>Te amo</li>
+    </ul>
+</div>
+
     </div>
 
     <script src="script.js"></script>
